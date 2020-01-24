@@ -1,0 +1,54 @@
+/*
+  const testBubbleSort = () => {
+    const arr = [3,10,4,1,5,9,2,6,5,8]
+    
+    for (let end = 10 ; end >= 1 ; end--) {
+      console.log(arr)
+      for (let i=1 ; i<end ; i++) {
+        if (arr[i-1] > arr[i]){
+          [arr[i-1] , arr[i]] = [arr[i] , arr[i-1]]
+          console.log(arr)
+        }
+      }  
+    }
+  }
+  useEffect(testBubbleSort, [])
+  */
+  /*
+  const testMergeSort = (arr = [3,10,4,1,5,9,2,6,5,8]) => {
+    //base case
+    if (arr.length <= 1) return arr;
+    
+    //first sort smaller arrays
+    let index = Math.ceil(arr.length/2)
+    const Left = testMergeSort(arr.slice(0, index))
+    const Right = testMergeSort(arr.slice(index))
+
+    //rejoin arrays here
+    const ans = [];
+    let [l, r] = [0, 0]  
+    while (l < Left.length | r < Right.length) {
+      if ( (l >= Left.length ) | 
+           (!(r >= Right.length) & Left[l] <= Right[r]) ) {
+        ans.push( Right[r] )
+        r++
+      }
+      else {
+
+      }
+
+    }
+
+
+    for (let end = 10 ; end >= 1 ; end--) {
+      console.log(arr)
+      for (let i=1 ; i<end ; i++) {
+        if (arr[i-1] > arr[i]){
+          [arr[i-1] , arr[i]] = [arr[i] , arr[i-1]]
+          console.log(arr)
+        }
+      }  
+    }
+  }
+  useEffect(testBubbleSort, [])
+  */

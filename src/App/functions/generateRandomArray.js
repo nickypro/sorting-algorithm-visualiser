@@ -8,9 +8,4 @@ const generateRandomArray = (length) => {
     return newArray
 }
 
-const doSwap = (arr, i, j) => {
-  newArray = [...doSwap]
-
-}
-
 export default generateRandomArray

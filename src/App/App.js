@@ -1,7 +1,5 @@
 import React ,{useEffect, useState} from 'react';
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import './App.css'
-import regeneratorRuntime from "regenerator-runtime";
 
 //import the visual components
 import Slider from './components/Slider'

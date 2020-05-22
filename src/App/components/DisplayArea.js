@@ -8,6 +8,9 @@ const DisplayArea = styled.div`
   align-items: flex-end;
   margin: auto;
   margin-top: 10vh;
+  padding-bottom:"2rem";
+  box-sizing:"border-box";
+  
   @media (max-width: 800px) {
     margin-top: 2vh;
     height: 50vh;

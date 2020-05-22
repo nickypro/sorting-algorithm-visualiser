@@ -14,6 +14,10 @@ import mergeSort from './functions/mergeSort'
 import quickSort from './functions/quickSort'
 import heapSort from './functions/heapSort'
 
+function isMobile() {
+  return window.innerWidth < 800;
+}
+
 const DELAYFACTOR = 40000
 
 const App = () => {
@@ -29,12 +33,12 @@ const App = () => {
   const isInOrder = (arr, i, j) => (arr[i] <= arr[j])
   const areTargetsInOrder = (i,j) => isInOrder(barHeights, targets[0], targets[1]) 
 
-  const doSort = () => {   
+  const doSort = (algorithm) => {   
     if (isRunning) return     
     let sort;
 
     //use chosen sort algorithm
-    switch (sortAlgorithm) {
+    switch (algorithm) {
       case "Bubble Sort": sort = bubbleSort; break;
       case "Merge Sort":  sort = mergeSort ; break;
       case "Heap Sort":   sort = heapSort;   break;
@@ -46,10 +50,13 @@ const App = () => {
     sort(barHeights, setBarHeights, setRunning, setTargets, delay)    
   }
 
-  //chose algorithm
-  const chooseAlgorithm = (event) => {
-    if (isRunning) return
+  const handleSortChoice = async (event) => {
+
     setSortAlgorithm(event.target.value)
+
+    if ( isMobile() ) {
+      doSort(event.target.value)
+    }
   }
 
   //reset the bars
@@ -101,7 +108,8 @@ const App = () => {
       
         <Slider min={5} value={numberOfBars} setValue={setNumberOfBars} isRunning={isRunning}></Slider>
         
-        <button className="menuButton" onClick={doSort} style={{opacity: (sortAlgorithm)?1:0}}>
+        <button className="menuButton submitSortDesktop" onClick={() => doSort(sortAlgorithm)} 
+          style={(sortAlgorithm) ? {backgroundColor: "#0074d9"} : {backgroundColor: "#ccc", cursor: "not-allowed"}}>
           Sort
         </button>
 

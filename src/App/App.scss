@@ -27,6 +27,15 @@ body {
   }
 }
 
+.submitSortDesktop {
+  color: white;
+  margin: 0rem 0.5rem;
+  border-radius: 0.5rem;
+  @media (max-width: 800px) {
+    display: none
+  }
+}
+
 .slider {
   -webkit-appearance: none;
   height: 15px;

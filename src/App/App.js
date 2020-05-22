@@ -22,10 +22,12 @@ function isMobile() {
 }
 
 const DELAYFACTOR = 40000
+const DEFAULT_NUMBER_OF_BARS = 50
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(["Merge Sort", "Quick Sort", "Heap Sort", "Bubble Sort"]) 
-  const [numberOfBars, setNumberOfBars] = useState(10)
+
+  const [numberOfBars, setNumberOfBars] = useState(DEFAULT_NUMBER_OF_BARS)
   const [targets, setTargets] = useState([3,7])
   const [barHeights, setBarHeights] = useState([])
   const [delay, setDelay] = useState()

@@ -18,6 +18,17 @@ body {
   }
 }
 
+.menuLabel {
+  color: $menuColor;
+  font-family: Courier;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+
 .sortAlgorithmButtons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

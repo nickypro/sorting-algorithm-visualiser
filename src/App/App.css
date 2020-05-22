@@ -17,6 +17,17 @@ body {
   text-decoration: underline;
 }
 
+.menuLabel {
+  color: #0074d9;
+  font-family: Courier;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+
 .sortAlgorithmButtons {
   display: -ms-grid;
   display: grid;
@@ -29,6 +40,18 @@ body {
     padding-bottom: 0.7rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.submitSortDesktop {
+  color: white;
+  margin: 0rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .submitSortDesktop {
+    display: none;
   }
 }
 

@@ -93,9 +93,15 @@ const App = () => {
       </style>
       <Menu> 
         
-        <button className="menuButton" onClick={generateNewBars}>
-          Generate New Bars
-        </button>
+        <div style={{display: "flex"}}>
+          <a href="https://github.com/pesvut/sorting-algorithm-visualiser">
+            <img src="http://pesvut.netsoc.ie/other/github-brands.svg" className="menuButton" style={{width: "1.5rem"}}/>
+          </a>
+          {" "}
+          <button className="menuButton" onClick={generateNewBars}>
+            Generate New Bars
+          </button>
+        </div>
         
         <div class="sortAlgorithmButtons">
         {menuItems.map((text, index) => (

@@ -1,11 +1,13 @@
 import React ,{useEffect, useState} from 'react';
 import './App.css'
+import regeneratorRuntime from "regenerator-runtime";
 
 //import the visual components
 import Slider from './components/Slider'
 import DisplayArea from './components/DisplayArea'
 import Menu from './components/Menu'
 import Bar from './components/Bar'
+import Switch from '@material-ui/core/Switch';
 
 //import the function used
 import generateRandomArray from './functions/generateRandomArray'
@@ -13,6 +15,7 @@ import bubbleSort from './functions/bubbleSort'
 import mergeSort from './functions/mergeSort'
 import quickSort from './functions/quickSort'
 import heapSort from './functions/heapSort'
+import {sin, cos} from './functions/trigFunctions'
 
 function isMobile() {
   return window.innerWidth < 800;

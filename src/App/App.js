@@ -1,6 +1,6 @@
 import React ,{useEffect, useState} from 'react';
 import './App.css'
-import regeneratorRuntime from "regenerator-runtime";
+import regeneratorRuntime from 'regenerator-runtime';
 
 //import the visual components
 import Slider from './components/Slider'
@@ -99,7 +99,7 @@ const App = () => {
         
         <div style={{display: "flex"}}>
           <a href="https://github.com/pesvut/sorting-algorithm-visualiser">
-            <img src="http://pesvut.netsoc.ie/other/github-brands.svg" className="menuButton" style={{width: "1.5rem"}}/>
+            <img src="./assets/github-brands.svg" className="menuButton" style={{width: "1.5rem"}}/>
           </a>
           {" "}
           <button className="menuButton" onClick={generateNewBars}>
